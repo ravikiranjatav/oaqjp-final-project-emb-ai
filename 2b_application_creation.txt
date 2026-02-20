@@ -1,0 +1,8 @@
+Python 3.10.12 (main, Aug 15 2025, 14:32:43) [GCC 11.4.0] on linux
+Type "help", "copyright", "credits" or "license" for more information.
+>>> from emotion_detection import emotion_detector
+>>> print(emotion_detector("I am very sorrowful today."))
+{"emotionPredictions":[{"emotion":{"anger":0.012676459, "disgust":0.008078912, "fear":0.086135305, "joy":0.39167193, "sadness":0.37007442}, "target":"", "emotionMentions":[{"span":{"begin":0, "end":26, "text":"I am very sorrowful today."}, "emotion":{"anger":0.012676459, "disgust":0.008078912, "fear":0.086135305, "joy":0.39167193, "sadness":0.37007442}}]}], "producerId":{"name":"Ensemble Aggregated Emotion Workflow", "version":"0.0.1"}}
+>>> print(emotion_detector("I am very happy today."))
+{"emotionPredictions":[{"emotion":{"anger":0.003285731, "disgust":0.0004207918, "fear":0.0062240036, "joy":0.9918044, "sadness":0.02038636}, "target":"", "emotionMentions":[{"span":{"begin":0, "end":22, "text":"I am very happy today."}, "emotion":{"anger":0.003285731, "disgust":0.0004207918, "fear":0.0062240036, "joy":0.9918044, "sadness":0.02038636}}]}], "producerId":{"name":"Ensemble Aggregated Emotion Workflow", "version":"0.0.1"}}
+>>> exit()
