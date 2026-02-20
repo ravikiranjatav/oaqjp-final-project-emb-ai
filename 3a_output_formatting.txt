@@ -48,3 +48,10 @@ def emotion_detector(text_to_analyze):
         "sadness": sadness,
         "dominant_emotion": dominant_emotion
     }
+
+
+OUTPUT:
+
+>>> from emotion_detection import emotion_detector
+>>> print(emotion_detector("I am very happy today."))
+{'anger': 0.003285731, 'disgust': 0.0004207918, 'fear': 0.0062240036, 'joy': 0.9918044, 'sadness': 0.02038636, 'dominant_emotion': 'joy'}
