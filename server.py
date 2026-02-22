@@ -1,3 +1,8 @@
+"""
+Server module for Emotion Detection web application.
+This module handles routing and deployment of the Flask app.
+"""
+
 from flask import Flask, render_template, request
 from EmotionDetection import emotion_detector
 
@@ -5,10 +10,16 @@ app = Flask(__name__)
 
 @app.route("/")
 def home():
+    """
+    Render the index page.
+    """
     return render_template("index.html")
 
 @app.route("/emotionDetector")
 def detect_emotion():
+    """
+    Detect emotion from user and return formatted response.
+    """
     text_to_analyze = request.args.get("textToAnalyze")
 
     result = emotion_detector(text_to_analyze)
