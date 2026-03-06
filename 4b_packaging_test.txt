@@ -1,0 +1,49 @@
+theia@theiadocker-ravikiranjat:/home/project/final_proj
+ect$ pip install -e
+
+Usage:   
+  pip install [options] <requirement specifier> [package-index-options] ...
+  pip install [options] -r <requirements file> [package-index-options] ...
+  pip install [options] [-e] <vcs project url> ...
+  pip install [options] [-e] <local project path> ...
+  pip install [options] <archive url/path> ...
+
+-e option requires 1 argument
+theia@theiadocker-ravikiranjat:/home/project/final_proj
+ect$ pip install -e .
+Defaulting to user installation because normal site-packages is not writeable
+Obtaining file:///home/project/final_project
+  Installing build dependencies ... done
+  Checking if build backend supports build_editable ... done
+  Getting requirements to build editable ... done
+  Preparing editable metadata (pyproject.toml) ... done
+Requirement already satisfied: requests in /usr/local/lib/python3.11/dist-packages (from EmotionDetection==0.1) (2.32.5)
+Requirement already satisfied: charset_normalizer<4,>=2 in /usr/local/lib/python3.11/dist-packages (from requests->EmotionDetection==0.1) (3.4.4)
+Requirement already satisfied: idna<4,>=2.5 in /usr/local/lib/python3.11/dist-packages (from requests->EmotionDetection==0.1) (3.11)
+Requirement already satisfied: urllib3<3,>=1.21.1 in /usr/local/lib/python3.11/dist-packages (from requests->EmotionDetection==0.1) (2.5.0)
+Requirement already satisfied: certifi>=2017.4.17 in /usr/local/lib/python3.11/dist-packages (from requests->EmotionDetection==0.1) (2025.10.5)
+Building wheels for collected packages: EmotionDetection
+  Building editable for EmotionDetection (pyproject.toml) ... done
+  Created wheel for EmotionDetection: filename=emotiondetection-0.1-0.editable-py3-none-any.whl size=6970 sha256=45559acaa248b30b0a59f698368064686f0f98e6d27d038811da070ff754fcc1
+  Stored in directory: /tmp/pip-ephem-wheel-cache-mhg63udh/wheels/a8/3f/e2/11158b7a42eb4bdf01dc9cd574a0b0be3a8dbf60068918a06d
+Successfully built EmotionDetection
+Installing collected packages: EmotionDetection
+Successfully installed EmotionDetection-0.1
+
+[notice] A new release of pip is available: 25.3 -> 26.0.1
+[notice] To update, run: pip3 install --upgrade pip
+theia@theiadocker-ravikiranjat:/home/project/final_proj
+ect$ pip show EmotionDetection
+Name: EmotionDetection
+Version: 0.1
+Summary: 
+Home-page: 
+Author: 
+Author-email: 
+License: 
+Location: /home/theia/.local/lib/python3.11/site-packages
+Editable project location: /home/project/final_project
+Requires: requests
+Required-by: 
+theia@theiadocker-ravikiranjat:/home/project/final_proj
+ect$ 
